@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI Quickstart</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <h3>ChatGPT - Ask a question</h3>
+  <form action="/" method="post">
+    <input type="text" name="question" placeholder="Enter an question" required />
+    <input type="submit" value="Get answer" />
+  </form>
+  {% if result %}
+  <div class="result">{{ result }}</div>
+  {% endif %}
+</body>
