@@ -21,3 +21,11 @@ Amend the .env file and add you openai API token (attained from https://openai.c
  Ask a question
  
  Get the answer
+ 
+ # Image Generation
+ 
+ Navigate to http://localhost:5000/image
+ 
+ Enter an image description
+ 
+ View the image
