@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <title>OpenAI ChatGPT Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}" />
+</head>
+
+<body>
+  <h3>ChatGPT - Image Generation</h3>
+  <form action="/image" method="post">
+    <input type="text" name="image" placeholder="Enter an image description to generate" required />
+    <input type="submit" value="Get Image" />
+  </form>
+  {% if result %}
+  <div style="margin-top: 10%;">
+    <img src="{{ result }}" width="500px" height="500px"></img>
+  </div>
+  {% endif %}
+</body>
