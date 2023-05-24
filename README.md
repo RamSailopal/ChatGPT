@@ -11,7 +11,7 @@ ChatGPT Python Flask example using https://beta.openai.com/docs/quickstart
      cd ChatGPT
      cd app
      
-Amend the .env file and add you openai API token (attained from https://openai.com/api/)
+Amend the .env file and add your own openai API token (attained from https://openai.com/api/)
 
      cd ..
      docker run -it --entrypoint /home/app/entrypoint.sh -v $PWD/app:/home/app -p 5000:5000 docker.io/ubuntu
